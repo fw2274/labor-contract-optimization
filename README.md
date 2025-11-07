@@ -66,6 +66,31 @@ optimization/
   - Surplus analysis
   - Pie chart of labor-weeks by contract type
 
+### 4. Time Series Pattern Detection ([src/timeseries_analysis_standalone.py](src/timeseries_analysis_standalone.py))
+- **Statistical Analysis**:
+  - Comprehensive statistics (central tendency, dispersion, distribution shape)
+  - Percentile analysis and range metrics
+  - Holiday period detection and analysis
+
+- **Pattern Detection**:
+  - Trend analysis with linear regression
+  - Seasonality detection and strength measurement
+  - Autocorrelation analysis
+  - Weekly pattern identification
+
+- **Anomaly Detection**:
+  - Z-Score method (outlier detection)
+  - IQR method (robust outlier detection)
+  - Moving window method (local anomaly detection)
+  - Configurable sensitivity thresholds
+
+- **Outputs**:
+  - Comprehensive text report with insights
+  - CSV exports of statistics and anomalies
+  - Text-based visualization
+
+See [TIMESERIES_ANALYSIS.md](TIMESERIES_ANALYSIS.md) for detailed documentation.
+
 ## Quick Start
 
 ### Installation
@@ -107,6 +132,11 @@ python3 labor_optimization.py
 3. **Generate analytics**:
 ```bash
 python3 analytics.py
+```
+
+4. **Run time series pattern detection**:
+```bash
+python3 timeseries_analysis_standalone.py
 ```
 
 ## Output Files
